@@ -15,5 +15,5 @@ while True:
     if keyboard.is_pressed('q'): # Hold q to stop.
         print("Exit")
         break
-    time.sleep(0.01) # Seconds. It may break if it is TOO fast.
+    time.sleep(0.02) # Seconds. It may break if it is TOO fast.
     mouse.click(Button.left, 1)
