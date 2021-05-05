@@ -2,7 +2,7 @@
 # pip install moviepy
 from pytube import YouTube
 from moviepy.editor import *
-import os, shutil
+import os
 
 def get_mp3():
     url = input("Entre com o URL/Link do vídeo: ")

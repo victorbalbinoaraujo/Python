@@ -33,6 +33,11 @@ class Cliente(Conta):
         self.cidade = cidade
 
 
+conta1 = Conta(num_conta=1, saldo=150)
+conta2 = Conta(num_conta=2, saldo=90)
+
+conta1.transferencia(conta2, 30)
+conta2.mostrar_saldo()
 
 
 

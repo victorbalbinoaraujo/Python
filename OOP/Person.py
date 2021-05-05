@@ -38,12 +38,12 @@ class Person:
 
 Person.set_raise_amt(1.04)
 
-per_1 = Person('Anna Livia', 'Prado', 50000)
-per_2 = Person('Clara Maria', 'Cardoso', 50000)
-per_3 = Person('Victor Balbino', 'Araujo', 50000)
+per_1 = Person('Fulano', 'Alves', 50000)
+per_2 = Person('Ciclano', 'Silva', 50000)
+per_3 = Person('Beltrano', 'Sousa', 50000)
 
 #Criando pessoa baseado em string
-per_str_1 = 'Leticia-Nobrega-50000'
+per_str_1 = 'João-Qualquer-50000'
 per_4 = Person.from_string(per_str_1)
 
 people = [per_1, per_2, per_3, per_4]
