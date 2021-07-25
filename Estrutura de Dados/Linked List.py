@@ -105,7 +105,7 @@ class LinkedList:
     
     def search(self, data):
         
-        if self.length() == 0:
+        if self.head == None:
             print("Error: Empty list")
             return None
 
@@ -122,12 +122,11 @@ class LinkedList:
     
     def remove_first_item(self):
         
-        if self.length() == 0:
+        if self.head == None:
             print("Error: Empty list")
             return None
 
-        current_node = self.head
-        self.head = current_node.next
+        self.head = self.head.next
     
     def remove_last_item(self):
 
@@ -150,7 +149,7 @@ class LinkedList:
 
     def remove_by_value(self, data):
 
-        if self.length() == 0:
+        if self.head == None:
             print("Error: Empty list")
             return None
 
