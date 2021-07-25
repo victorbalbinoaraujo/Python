@@ -4,6 +4,7 @@ from pytube import YouTube
 from moviepy.editor import *
 import os
 
+
 def get_mp3():
     url = input("Entre com o URL/Link do vídeo: ")
     print("Efetuando download...")
@@ -20,6 +21,6 @@ def get_mp3():
 
     os.remove(mp4)
 
+
 while True:
     get_mp3()
-

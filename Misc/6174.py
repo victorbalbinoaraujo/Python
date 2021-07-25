@@ -1,6 +1,7 @@
 def list_to_number(lst):
-    s = ''.join(map(str, lst))
+    s = "".join(map(str, lst))
     return s
+
 
 n = int(input("Digite um número de 4 algarismos distintos: "))
 num = list(map(int, str(n)))
@@ -15,7 +16,7 @@ if len(num) == 4 and contains_duplicates == False:
         y = sorted(num, reverse=True)
         x = list_to_number(x)
         y = list_to_number(y)
-        
+
         resultado = int(y) - int(x)
         print(resultado)
         # Não pode ir além porque 7641 - 1467 é igual a 6174, resultando em um loop infinito após 7 vezes.
