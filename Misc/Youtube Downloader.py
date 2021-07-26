@@ -1,9 +1,10 @@
 # pip install pytube
 # pip install moviepy
+
+# THIS FUCKER DOESN'T WORK ANYMORE 😁
 from pytube import YouTube
 from moviepy.editor import *
 import os
-
 
 def get_mp3():
     url = input("Entre com o URL/Link do vídeo: ")
@@ -20,7 +21,6 @@ def get_mp3():
     video_clip.close()
 
     os.remove(mp4)
-
 
 while True:
     get_mp3()
