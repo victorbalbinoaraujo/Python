@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -10,9 +10,12 @@ def root():
 def magic():
     return '<H1>Mágica!</H1>'
 
-    @app.route('/pessoas/<string:nome>/<string:cidade>')
-    def pessoa(nome, cidade):
-        return f'Nome: {nome} <br> Cidade: {cidade}'
+@app.route('/pessoas/<string:nome>/<string:cidade>')
+def pessoa(nome, cidade):
+    return jsonify({
+        'Nome' : nome,
+        'Cidade' : cidade
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
