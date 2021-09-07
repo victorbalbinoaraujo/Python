@@ -80,7 +80,7 @@ def azumarill():
             'Attack' : 252,
             'Defense' : 168,
             'Sp. Atk' : 0,
-            'Sp. Def' : [0, 0, 16],
+            'Sp. Def' : [0, 16],
             'Speed' : [84, 164]
         }
     }
@@ -247,9 +247,9 @@ def clefable():
             'HP' : [252, 248],
             'Attack' : 0,
             'Defense' : [252, 236, 172],
-            'Sp. Atk' : [0, 0, 72],
+            'Sp. Atk' : [0, 72],
             'Sp. Def' : [4, 24, 0],
-            'Speed' : [0, 0, 12]
+            'Speed' : [0, 12]
         }
     }
 })
@@ -278,6 +278,90 @@ def diancie_mega():
             'Sp. Atk' : [248, 252],
             'Sp. Def' : 0,
             'Speed' : [252, 188]
+        }
+    }
+})
+    
+app.route('/dragonite')
+def dragonite():
+    return jsonify({
+    'Dragonite' : {
+        'Natures' : ['Adamant', 'Jolly'],
+        'Items' : ['Leftovers', 'Lum Berry', 'Choice Band'],
+        'Types' : ['Dragon', 'Flying'],
+        'Abilities' : ['Multiscale'],
+        'Moves' : ['Dragon Dance', 'Substitute', 'Roost', 'Fly', 'Outrage', 'Extreme Speed', 'Earthquake', 'Fire Punch'],
+        'Base Stats' : {
+            'HP' : 91,
+            'Attack' : 134,
+            'Defense' : 95,
+            'Sp. Atk' : 100,
+            'Sp. Def' : 100,
+            'Speed' : 80
+        },
+        'EVs' : {
+            'HP' : [252, 0],
+            'Attack' : [0, 252],
+            'Defense' : [116, 4],
+            'Sp. Atk' : 0,
+            'Sp. Def' : 0,
+            'Speed' : [252, 140]
+        }
+    }
+})
+    
+app.route('/dugtrio')
+def dragonite():
+    return jsonify({
+    'Dugtrio' : {
+        'Natures' : ['Jolly'],
+        'Items' : ['Focus Sash'],
+        'Types' : ['Ground'],
+        'Abilities' : ['Sand Force'],
+        'Moves' : ['Stealth Rock', 'Memento', 'Earthquake', 'Toxic', 'Stone Edge'],
+        'Base Stats' : {
+            'HP' : 35,
+            'Attack' : 80,
+            'Defense' : 50,
+            'Sp. Atk' : 50,
+            'Sp. Def' : 70,
+            'Speed' : 120
+        },
+        'EVs' : {
+            'HP' : 0,
+            'Attack' : 252,
+            'Defense' : 4,
+            'Sp. Atk' : 0,
+            'Sp. Def' : 0,
+            'Speed' : 252
+        }
+    }
+})
+    
+app.route('/excadrill')
+def dragonite():
+    return jsonify({
+    'Excadrill' : {
+        'Natures' : ['Adamant', 'Jolly', 'Careful'],
+        'Items' : ['Leftovers', 'Life Orb', 'Choice Scarf'],
+        'Types' : ['Ground', 'Steel'],
+        'Abilities' : ['Sand Rush', 'Mold Breaker'],
+        'Moves' : ['Earthquake', 'Iron Head', 'Rapid Spin', 'Swords Dance', 'Rock Slide', 'Toxic'],
+        'Base Stats' : {
+            'HP' : 110,
+            'Attack' : 135,
+            'Defense' : 60,
+            'Sp. Atk' : 50,
+            'Sp. Def' : 65,
+            'Speed' : 88
+        },
+        'EVs' : {
+            'HP' : 0,
+            'Attack' : 252,
+            'Defense' : 4,
+            'Sp. Atk' : 0,
+            'Sp. Def' : 0,
+            'Speed' : 252
         }
     }
 })
