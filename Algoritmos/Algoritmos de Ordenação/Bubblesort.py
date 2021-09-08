@@ -5,8 +5,6 @@ def bubblesort(lista):
             if lista[j] > lista[j + 1]:
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
                 
-
-
 lista = [1, 5, 22, 77, 24, 28, 2, 62, 21, 3, 7]
 
 print(f"""
