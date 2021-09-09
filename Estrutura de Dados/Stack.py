@@ -1,24 +1,3 @@
-"""
-Pilha / Stack
-
-LIFO
-
-Last in, First Out
-(o último a entrar é o primeiro a sair.)
-
-Push(data) -> Adicionar elemento na pilha.
-
-Pop()  -> Remover o topo elemento da pilha.
-
-Size() -> Tamanho da pilha.
-
-Exemplos: 
-Ctrl + Z
-Guias do Browser (voltar uma página.)
-Cálculo de distâncias
-Pilha do MTG
-"""
-
 class Stack:
     def __init__(self):
         self.items = []
