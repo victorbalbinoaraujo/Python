@@ -90,3 +90,10 @@ def variance(x):
 
 def standard_deviation(x):
     return sqrt(variance(x))
+
+def median_absolute_deviation(x):
+    
+    deviations = de_mean(x)
+    x = [abs(x_i) for x_i in deviations]
+    
+    return sum(x) / len(x)
