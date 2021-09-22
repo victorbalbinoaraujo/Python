@@ -97,3 +97,6 @@ def median_absolute_deviation(x):
     x = [abs(x_i) for x_i in deviations]
     
     return sum(x) / len(x)
+
+def standard_error(x):
+    return standard_deviation(x) / sqrt(len(x))
