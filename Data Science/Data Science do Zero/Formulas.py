@@ -100,3 +100,6 @@ def median_absolute_deviation(x):
 
 def standard_error(x):
     return standard_deviation(x) / sqrt(len(x))
+
+def interquartile_range(x):
+    return quantile(x, 0.75) - quantile(x, 0.25)
