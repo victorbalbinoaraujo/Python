@@ -1,4 +1,4 @@
-from typing import Optional, List
+from typing import List
 
 def list_to_int(l1: List[int]) -> int:
     strings = [str(elem) for elem in reversed(l1)]
