@@ -17,6 +17,3 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
 
 def non_exchangeable_value(budget, exchange_rate, spread, denomination):
     return math.floor(budget / (exchange_rate + (exchange_rate * (spread / 100)))) - exchangeable_value(budget, exchange_rate, spread, denomination)
-    
-
-print(exchangeable_value(1500, 0.84, 25, 40))
