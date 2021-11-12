@@ -6,7 +6,6 @@ EMPTY_NODE_VALUE = '__EMPTY_NODE_VALUE__'
 class EmptyQueueError(Exception):
     ...
 
-
 class Node:
     def __init__(self, value: Any) -> None:
         self.value = value
