@@ -1,23 +1,31 @@
 from statistics import mean
 
+
 def get_rounds(number):
-    return [number, number+1, number+2]
+    return [number, number + 1, number + 2]
+
 
 def concatenate_rounds(rounds_1, rounds_2):
     return rounds_1 + rounds_2
 
+
 def list_contains_round(rounds, number):
     return number in rounds
+
 
 def card_average(hand):
     return mean(hand)
 
+
 def approx_average_is_average(hand):
     return card_average(hand) == hand[(len(hand) - 1) // 2] or card_average(hand) == card_average([hand[0], hand[-1]])
 
+
 def average_even_is_average_odd(hand):
-    odds, evens = [x for x in hand if x % 2 == 0], [x for x in hand if x % 2 == 1]
+    odds, evens = [x for x in hand if x %
+                   2 == 0], [x for x in hand if x % 2 == 1]
     return card_average(odds) == card_average(evens)
+
 
 def maybe_double_last(hand):
     if hand[-1] == 11:
