@@ -18,7 +18,7 @@ def card_average(hand):
 
 
 def approx_average_is_average(hand):
-    return card_average(hand) == hand[(len(hand) - 1) // 2] or card_average(hand) == card_average([hand[0], hand[-1]])
+    return card_average(hand) in [hand[(len(hand) - 1) // 2], card_average([hand[0], hand[-1]])]
 
 
 def average_even_is_average_odd(hand):

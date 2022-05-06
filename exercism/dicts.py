@@ -16,10 +16,7 @@ def decrement_items(inventory, items):
     inventory_count.subtract(create_inventory(items))
 
     # Handling negative numbers
-    return {
-        key: (value if value >= 0 else 0)
-        for key, value in inventory_count.items()
-    }
+    return {key: max(value, 0) for key, value in inventory_count.items()}
 
 
 def remove_item(inventory, item):

@@ -3,20 +3,14 @@ def triangle(sides) -> bool:
         a, b, c = sides[0], sides[1], sides[2]
         return (a + b >= c) and (a + c >= b) and (b + c >= a)
 
-def equilateral(sides: list) -> bool :
-    if triangle(sides):
-        return len(set(sides)) == 1
-    return False
+def equilateral(sides: list) -> bool:
+    return len(set(sides)) == 1 if triangle(sides) else False
 
 def isosceles(sides: list) -> bool:
-    if triangle(sides):
-        return len(set(sides)) <= 2
-    return False
+    return len(set(sides)) <= 2 if triangle(sides) else False
     
 def scalene(sides: list) -> bool:
-    if triangle(sides):
-        return len(set(sides)) == 3
-    return False
+    return len(set(sides)) == 3 if triangle(sides) else False
 
 print(
     equilateral([2, 2, 2]),
